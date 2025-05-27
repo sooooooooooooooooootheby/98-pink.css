@@ -1,75 +1,34 @@
-### What this?
-
-This is the branch version of 98.css<strong style="color: purple">✨ 98-pink.css ✨</strong>
-
-Modify the color tones to pink and blue on the original basis.
-
-### How to start?
-
-I couldn't understand the original text, so I figured it out myself. First, you need to run `npm run build` to create `dist`, and then execute `node server.js` to start a live server. 
-
-server.js will monitor file changes and automatically rebuild, so once it's running, you only need to modify `style.css`.
-
----
-
 ## 98.css
 
-[![npm](https://98badges.now.sh/api/version)](http://npm.im/98.css)
-[![gzip size](https://98badges.now.sh/api/size)](https://unpkg.com/98.css)
+一套兼顾情怀&还原度&可爱的经典UI复刻方案
 
-A design system for building faithful recreations of old UIs.
+<img alt="window" src="https://cdn.jsdelivr.net/gh/sooooooooooooooooootheby/98-pink.css@0.0.2/docs/window.png" height="133">
 
-<img alt="a screenshot of a window with the title 'My First VB4 Program' and two buttons OK and Cancel, styled like a Windows 98 dialog" src="https://github.com/jdan/98.css/blob/main/docs/window.png?raw=true" height="133"> <img alt="a magnified view showing pixel-perfect borders on a scrollbar and button element" src="https://github.com/jdan/98.css/blob/main/docs/zoom.png?raw=true?raw=true" height="133">
+### 这是什么
 
-98.css is a CSS file that takes semantic HTML and makes it look pretty. It does not ship with any JavaScript, so it is compatible with your frontend framework of choice.
+这是98.css的分支版本<strong style="color: purple">✨ 98-pink.css ✨</strong>
 
-Be sure to check out [XP.css](https://botoxparty.github.io/XP.css/) and [7.css](https://khang-nd.github.io/7.css/) as well.
+在原来的基础上将色调修改为粉红色和蓝色。
 
-### Installation / Usage
+### 如何开始
 
-The easiest way to use 98.css is to import it from [unpkg](https://unpkg.com/).
+通过cdn导入!
 
-```html
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>98.css example</title>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="https://unpkg.com/98.css" />
-	</head>
-
-	<body>
-		<div class="window" style="margin: 32px; width: 250px">
-			<div class="title-bar">
-				<div class="title-bar-text">My First VB4 Program</div>
-			</div>
-			<div class="window-body">
-				<p>Hello, world!</p>
-			</div>
-		</div>
-	</body>
-</html>
+```bash
+https://cdn.jsdelivr.net/gh/sooooooooooooooooootheby/98-pink.css@0.0.2/css/98-pink.css
 ```
 
-Alternatively, you can grab 98.css for [the releases page](https://github.com/jdan/98.css/releases) or [npm](https://www.npmjs.com/package/98.css).
+### 开发
 
-```
-npm install 98.css
-```
+首先你需要进行`npm install`.
 
-Here is an example of [98.css being used with React](https://codesandbox.io/s/objective-chandrasekhar-t5t6h?file=/src/index.js), and [an example with vanilla JavaScript](https://codesandbox.io/s/late-sound-miqho?file=/index.html).
+`style.css`这是你需要关注的地方.
 
-Refer to the [documentation page](https://jdan.github.io/98.css/) for specific instructions on this library's components.
+原文作者让我们使用`npm start`去启动一个开发环境, 但是我试了一下, 浏览器会报错.
 
-### Developing
+所以我自己琢磨了一下, 我们可以运行`node server.js`启动开发环境, 该环境将监视文件更改并重建 98.css, 在此过程中重新加载浏览器.
 
-First, run `npm install`.
-
-[`style.css`](https://github.com/jdan/98.css/blob/main/style.css) is where everything happens.
-
-You can use `npm start` to start a development environment that will watch for file changes and rebuild 98.css, reloading your browser in the process.
-
-You can run a build manually with `npm run build`. This will write to the `dist/` directory.
+当你做完一切之后可以运行`node build.js`或者`npm run build`打包css文件, css会生成在`dist`目录下.
 
 ### Issues, Contributing, etc.
 
