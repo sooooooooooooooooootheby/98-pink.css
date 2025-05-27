@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #fff0ef;
+	background: #c0c0c0;
 }
 
 main {
@@ -70,7 +70,7 @@ p {
 blockquote {
 	margin: 0 0 20px;
 	padding: 20px;
-	background: #ffdbd9;
+	background: #dfdfdf;
 }
 
 blockquote footer {
@@ -80,7 +80,7 @@ blockquote footer {
 .example {
 	margin: 16px 0;
 	padding: 12px 24px;
-	border-left: 1px solid #edaaa7;
+	border-left: 1px solid #808080;
 }
 
 details {
@@ -95,6 +95,19 @@ summary {
 
 details[open] summary {
 	margin-bottom: 8px;
+}
+
+button.focused {
+	outline: 1px dotted #000000;
+	outline-offset: -4px;
+}
+
+button.active {
+	box-shadow:
+		inset -1px -1px #ffffff,
+		inset 1px 1px #0a0a0a,
+		inset -2px -2px #dfdfdf,
+		inset 2px 2px #808080;
 }
 
 @media (max-width: 480px) {

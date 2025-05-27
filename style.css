@@ -6,15 +6,24 @@
 
 :root {
 	/* Color */
-	--text-color: #222222;
-	--surface: #c0c0c0;
+	--color-pinkline-50: #fff0ef;
+	--color-pinkline-100: #ffdbd9;
+	--color-pinkline-200: #f6c2c0;
+	--color-pinkline-300: #edaaa7;
+	--color-pinkline-400: #de9492;
+	--color-pinkline-500: #d9908e;
+
+	--text-color: #3D28BC;
+	--surface: var(--color-pinkline-50);
+	--border-color: #3D28BC;
+	--button-surface: var(--color-pinkline-100);
 	--button-highlight: #ffffff;
 	--button-face: #dfdfdf;
 	--button-shadow: #808080;
 	--window-frame: #0a0a0a;
 	--dialog-blue: #000080;
 	--dialog-blue-light: #1084d0;
-	--dialog-gray: #808080;
+	--dialog-gray: #DEDEDE;
 	--dialog-gray-light: #b5b5b5;
 	--link-blue: #0000ff;
 
@@ -44,21 +53,21 @@
 
 	/* Borders */
 	--border-width: 1px;
-	--border-raised-outer: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-highlight);
+	--border-raised-outer: inset -1px -1px var(--border-color), inset 1px 1px var(--button-highlight);
 	--border-raised-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-face);
-	--border-sunken-outer: inset -1px -1px var(--button-highlight), inset 1px 1px var(--window-frame);
+	--border-sunken-outer: inset -1px -1px var(--button-highlight), inset 1px 1px var(--border-color);
 	--border-sunken-inner: inset -2px -2px var(--button-face), inset 2px 2px var(--button-shadow);
-	--default-button-border-raised-outer: inset -2px -2px var(--window-frame), inset 1px 1px var(--window-frame);
+	--default-button-border-raised-outer: inset -2px -2px var(--border-color), inset 1px 1px var(--window-frame);
 	--default-button-border-raised-inner: inset 2px 2px var(--button-highlight), inset -3px -3px var(--button-shadow), inset 3px 3px var(--button-face);
-	--default-button-border-sunken-outer: inset 2px 2px var(--window-frame), inset -1px -1px var(--window-frame);
+	--default-button-border-sunken-outer: inset 2px 2px var(--border-color), inset -1px -1px var(--window-frame);
 	--default-button-border-sunken-inner: inset -2px -2px var(--button-highlight), inset 3px 3px var(--button-shadow), inset -3px -3px var(--button-face);
 
 	/* Window borders flip button-face and button-highlight */
-	--border-window-outer: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-face);
+	--border-window-outer: inset -1px -1px var(--border-color), inset 1px 1px var(--button-face);
 	--border-window-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-highlight);
 
 	/* Field borders (checkbox, input, etc) flip window-frame and button-shadow */
-	--border-field: inset -1px -1px var(--button-highlight), inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face), inset 2px 2px var(--window-frame);
+	--border-field: inset -1px -1px var(--button-highlight), inset 1px 1px var(--border-color), inset -2px -2px var(--button-face), inset 2px 2px var(--window-frame);
 	--border-status-field: inset -1px -1px var(--button-face), inset 1px 1px var(--button-shadow);
 
 	/* Tabs */
@@ -132,7 +141,7 @@ input[type="reset"] {
 	border: none;
 	color: transparent;
 	text-shadow: 0 0 var(--text-color);
-	background: var(--surface);
+	background: var(--button-surface);
 	box-shadow: var(--border-raised-outer), var(--border-raised-inner);
 	border-radius: 0;
 
@@ -209,7 +218,8 @@ input[type="reset"]:disabled,
 }
 
 .title-bar {
-	background: linear-gradient(90deg, var(--dialog-blue), var(--dialog-blue-light));
+	/* background: linear-gradient(90deg, var(--dialog-blue), var(--dialog-blue-light)); */
+	background-color: var(--color-pinkline-100);
 	padding: 3px 2px 3px 3px;
 	display: flex;
 	justify-content: space-between;
@@ -222,7 +232,7 @@ input[type="reset"]:disabled,
 
 .title-bar-text {
 	font-weight: bold;
-	color: white;
+	color: var(--text-color);
 	letter-spacing: 0;
 	margin-right: 24px;
 }
@@ -837,7 +847,7 @@ summary:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: var(--button-face);
+	background-color: var(--surface);
 	box-shadow: var(--border-raised-outer), var(--border-raised-inner);
 }
 

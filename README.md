@@ -1,3 +1,17 @@
+### What this?
+
+This is the branch version of 98.css<strong style="color: purple">✨ 98-pink.css ✨</strong>
+
+Modify the color tones to pink and blue on the original basis.
+
+### How to start?
+
+I couldn't understand the original text, so I figured it out myself. First, you need to run `npm run build` to create `dist`, and then execute `node server.js` to start a live server. 
+
+server.js will monitor file changes and automatically rebuild, so once it's running, you only need to modify `style.css`.
+
+---
+
 ## 98.css
 
 [![npm](https://98badges.now.sh/api/version)](http://npm.im/98.css)
