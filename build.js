@@ -26,8 +26,8 @@ function buildCSS() {
 		})
 		.then((result) => {
 			mkdirp.sync("dist");
-			fs.writeFileSync("dist/98.css", result.css);
-			fs.writeFileSync("dist/98.css.map", result.map.toString());
+			fs.writeFileSync("dist/98-pink.css", result.css);
+			fs.writeFileSync("dist/98-pink.css.map", result.map.toString());
 		});
 }
 
