@@ -1,8 +1,8 @@
-{
-	"name": "98.css",
+{:.
+	"name": "98-pink.css",
 	"version": "0.1.21",
-	"description": "A design system for building faithful recreations of old UIs",
-	"main": "dist/98.css",
+	"description": "一套兼顾情怀&还原度&可爱的经典UI复刻方案",
+	"main": "css/98-pink.css",
 	"directories": {
 		"doc": "docs"
 	},
@@ -15,18 +15,19 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jdan/98.css.git"
+		"url": "git+https://github.com/sooooooooooooooooootheby/98-pink.css.git"
 	},
 	"keywords": [
 		"css",
-		"windows98"
+		"windows98",
+		"pink"
 	],
 	"author": "Jordan Scales <scalesjordan@gmail.com>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/jdan/98.css/issues"
+		"url": "https://github.com/sooooooooooooooooootheby/98-pink.css/issues"
 	},
-	"homepage": "https://github.com/jdan/98.css",
+	"homepage": "https://github.com/sooooooooooooooooootheby/98-pink.css",
 	"devDependencies": {
 		"chokidar": "^3.3.1",
 		"cssnano": "^5.0.1",
